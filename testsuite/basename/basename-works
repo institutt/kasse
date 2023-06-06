@@ -1,0 +1,1 @@
+test x$(basename $(pwd)) = x$(opptattkasse basename $(pwd))

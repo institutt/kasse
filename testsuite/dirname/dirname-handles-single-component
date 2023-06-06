@@ -1,0 +1,1 @@
+test $(opptattkasse dirname foo) = .

@@ -1,0 +1,2 @@
+opptattkasse touch foo
+test -f foo

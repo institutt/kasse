@@ -1,0 +1,14 @@
+#!/bin/sh
+
+b=`basename $PWD`
+test "${b#opptattkasse}" != "$b" || { echo "Must be run in opptattkasse tree"; exit 1; }
+
+cd ..
+cp -pPR "$b" opptattkasse.$$.test_tree
+cd opptattkasse.$$.test_tree
+make defconfig
+make $MAKEOPTS
+make clean
+cd ..
+diff -urp "$b" opptattkasse.$$.test_tree >opptattkasse.$$.test_tree.diff
+cat opptattkasse.$$.test_tree.diff

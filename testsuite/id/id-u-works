@@ -1,0 +1,1 @@
+test x$(id -u) = x$(opptattkasse id -u)

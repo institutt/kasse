@@ -1,0 +1,16 @@
+#!/bin/sh
+
+opptattkasse=../opptattkasse
+
+i=4000
+echo "Before we started $i copies of '$opptattkasse sleep 10':"
+$opptattkasse nmeter '%t %[pn] %m' | head -3
+
+while test $i != 0; do
+    $opptattkasse sleep 10 &
+    i=$((i-1))
+done
+sleep 1
+
+echo "After:"
+$opptattkasse nmeter '%t %[pn] %m' | head -3

@@ -1,0 +1,6 @@
+bin/opptattkasse bin/logread
+bin/opptattkasse sbin/klogd
+bin/opptattkasse sbin/syslogd
+usr/share/man/man1/opptattkasse.1.gz usr/share/man/man1/logread.1.gz
+usr/share/man/man1/opptattkasse.1.gz usr/share/man/man8/klogd.8.gz
+usr/share/man/man1/opptattkasse.1.gz usr/share/man/man8/syslogd.8.gz

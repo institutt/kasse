@@ -1,0 +1,11 @@
+#!/bin/sh
+
+opptattkasse=../opptattkasse
+
+$opptattkasse sleep 10 &
+pid=$!
+sleep 1
+
+echo "Memory map of '$opptattkasse sleep 10':"
+size $opptattkasse
+pmap $pid | env - grep "^[0-9a-f][0-9a-f]* " | sort -r -t " " -k2,999

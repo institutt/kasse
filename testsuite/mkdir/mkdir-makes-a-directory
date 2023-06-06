@@ -1,0 +1,2 @@
+opptattkasse mkdir foo
+test -d foo

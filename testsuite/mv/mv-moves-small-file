@@ -1,0 +1,4 @@
+echo I WANT > foo
+opptattkasse mv foo bar
+test ! -e foo
+test -f bar

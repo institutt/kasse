@@ -1,0 +1,3 @@
+echo I WANT > foo
+opptattkasse cp foo bar
+cmp foo bar

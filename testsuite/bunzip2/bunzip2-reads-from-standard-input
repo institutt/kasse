@@ -1,0 +1,2 @@
+echo foo | bzip2 | opptattkasse bunzip2 > output
+echo foo | cmp - output

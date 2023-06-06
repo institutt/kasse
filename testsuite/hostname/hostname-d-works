@@ -1,0 +1,3 @@
+f=$(opptattkasse hostname -f).
+d=$(opptattkasse hostname -d)
+test x"${f#*.}" = x"$d${d:+.}"

@@ -1,0 +1,3 @@
+touch foo
+opptattkasse gzip foo
+test ! -f foo

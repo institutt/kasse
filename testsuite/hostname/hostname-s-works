@@ -1,0 +1,1 @@
+test x$(hostname -s) = x$(opptattkasse hostname -s)

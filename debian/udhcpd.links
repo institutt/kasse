@@ -1,0 +1,4 @@
+bin/opptattkasse usr/bin/dumpleases
+bin/opptattkasse usr/sbin/udhcpd
+usr/share/man/man1/opptattkasse.1.gz usr/share/man/man1/dumpleases.1.gz
+usr/share/man/man1/opptattkasse.1.gz usr/share/man/man8/udhcpd.8.gz
